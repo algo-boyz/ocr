@@ -17,10 +17,12 @@ brew install opencv cmake
 
 ```bash
 mkdir build && cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. \                 
+  -DCMAKE_BUILD_TYPE=Release \
+  -DONNXRUNTIME_ROOT=~/work/libs/onnxruntime-osx-arm64-1.22.0
 make -j$(sysctl -n hw.ncpu)
 
-./ocr_demo ../images/your_id_card.jpg
+build/ocr_demo images/german-drivers-license.jpg
 ```
 
 ## Important note about the skeleton
