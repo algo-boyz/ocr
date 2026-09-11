@@ -1,3 +1,4 @@
+#include <opencv2/geometry.hpp>
 #include "DbNet.h"
 #include "OcrUtils.h"
 

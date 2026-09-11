@@ -21,14 +21,15 @@ include_directories(
 )
 
 add_executable(ocr_demo
-            src/AngleNet.cpp
-            src/clipper.cpp
-            src/CrnnNet.cpp
-            src/DbNet.cpp
-            src/getopt.cpp
-            src/OcrLiteImpl.cpp
-            src/OcrLite.cpp
-            src/OcrUtils.cpp
+  src/main.cpp
+  src/AngleNet.cpp
+  src/clipper.cpp
+  src/CrnnNet.cpp
+  src/DbNet.cpp
+  src/getopt.cpp
+  src/OcrLiteImpl.cpp
+  src/OcrLite.cpp
+  src/OcrUtils.cpp
 )
 
 target_link_libraries(ocr_demo
